@@ -1,0 +1,86 @@
+
+
+
+body{
+    background-color: black;
+    background-image: url(fundo.jpg);
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "sec pri pri"
+        "rod rod rod";
+    grid-gap: 5px;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
+}
+
+header{
+    grid-area: cab;
+    top: 0;
+    position:sticky;
+    background-color: blue;
+}
+aside{
+    grid-area: sec;
+    top: 0;
+    position:sticky;
+    background-color: blue;
+}
+main{
+    grid-area: pri;
+    top: 0;
+    position:sticky;
+    background-color: blue;
+
+
+}
+footer{
+    grid-area: rod;
+    top: 0;
+    position:sticky;
+    background-color: blue;
+
+
+}
+
+header, aside, main, footer{
+    background-color: Plum
+}
+
+
+.elemento_mae{
+    background-color: aqua;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.elemento_filho_1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+.elemento_filho_2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 20px;
+}
+.elemento_filho_3{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
